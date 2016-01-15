@@ -4,6 +4,7 @@ subprojects {
 
   version = androidVersion
   group = 'com.android'
+  if (name.equals('json')) archivesBaseName = 'android-json'
 
   task poms {
     pom {

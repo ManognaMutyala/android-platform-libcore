@@ -7,4 +7,5 @@
 *.substvars
 build/
 files
+libandroid-json-java/
 libdex-java/

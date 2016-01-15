@@ -22,3 +22,16 @@ Description: Dalvik Executable Java library
  executes applications written for Android.
  .
  This Java library provides APIs for Dalvik Executable.
+
+Package: libandroid-json-java
+Architecture: all
+Depends: ${misc:Depends}
+Description: Android rewrite of the evil licensed json.org
+ Json.org is a popular java library to parse and create JSON string from
+ the author of the JSON standard Douglas Crockford. His implementation however
+ is not free software[1].
+ .
+ Therefor the Android team did a cleanroom reimplementation of a JSON library
+ to be used in place of the original one.
+ .
+ [1] http://wiki.debian.org/qa.debian.org/jsonevil

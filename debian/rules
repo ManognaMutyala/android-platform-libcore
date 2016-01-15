@@ -14,6 +14,10 @@ GRADLE_OPTIONS = --project-prop androidVersion=$(ANDROID_VERSION) \
 override_dh_auto_build:
 	dh_auto_build -- $(GRADLE_OPTIONS) assemble poms
 
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -r -f debian/.gradle
+
 override_jh_installlibs:
 	jh_installlibs --upstream-version=$(ANDROID_VERSION)
 
