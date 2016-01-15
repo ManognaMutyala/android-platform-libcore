@@ -1,4 +1,4 @@
-android-platform-libcore (6.0.1+r10-1) UNRELEASED; urgency=low
+android-platform-libcore (6.0.1+r10-1) unstable; urgency=low
 
   * Initial release (Closes: #795995)
 
