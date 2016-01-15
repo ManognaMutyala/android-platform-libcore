@@ -12,7 +12,7 @@ GRADLE_OPTIONS = --project-prop androidVersion=$(ANDROID_VERSION) \
 	dh $@ --with javahelper,jh_maven_repo_helper --buildsystem=gradle
 
 override_dh_auto_build:
-	dh_auto_build -- $(GRADLE_OPTIONS) assemble poms
+	dh_auto_build -- $(GRADLE_OPTIONS) assemble poms javadoc
 
 override_dh_auto_clean:
 	dh_auto_clean
