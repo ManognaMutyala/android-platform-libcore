@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+UPSTREAM_TAG = android-$(subst +,_,$(DEB_VERSION_UPSTREAM))
+ANDROID_VERSION = $(subst +r,.,$(DEB_VERSION_UPSTREAM))
+GRADLE_OPTIONS = --project-prop androidVersion=$(ANDROID_VERSION) \
+                 --build-file debian/build.gradle \
+                 --settings-file debian/settings.gradle
+
+%:
+	dh $@ --with javahelper,jh_maven_repo_helper --buildsystem=gradle
+
+override_dh_auto_build:
+	dh_auto_build -- $(GRADLE_OPTIONS) assemble poms
+
+override_jh_installlibs:
+	jh_installlibs --upstream-version=$(ANDROID_VERSION)
+
+get-orig-source: $(UPSTREAM_TAG).tar.gz
+	mk-origtargz --repack --compression xz $<
+
+$(UPSTREAM_TAG).tar.gz:
+	wget https://android.googlesource.com/platform/libcore/+archive/$(UPSTREAM_TAG).tar.gz

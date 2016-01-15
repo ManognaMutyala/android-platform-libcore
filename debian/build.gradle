@@ -1,0 +1,20 @@
+subprojects {
+  apply plugin: 'java'
+  apply plugin: 'maven'
+
+  version = androidVersion
+  group = 'com.android'
+
+  task poms {
+    pom {
+      project {
+        artifactId project.name
+        version project.version
+      }
+    }.writeTo("${buildDir}/${project.name}.pom")
+  }
+
+  clean.doLast {
+    delete("${buildDir}/*.pom")
+  }
+}

@@ -1,0 +1,10 @@
+.debhelper/
+.gradle/
+.gradlehome/
+.mh/
+*.log
+*.pom
+*.substvars
+build/
+files
+libdex-java/

@@ -1,0 +1,24 @@
+Source: android-platform-libcore
+Section: java
+Priority: optional
+Maintainer: Android tools Maintainer <android-tools-devel@lists.alioth.debian.org>
+Uploaders: Kai-Chung Yan <seamlikok@gmail.com>
+Build-Depends: debhelper (>= 9),
+               default-jdk
+Build-Depends-Indep: gradle,
+                     gradle-debian-helper,
+                     javahelper,
+                     maven-repo-helper
+Standards-Version: 3.9.6
+Homepage: https://android.googlesource.com/platform/libcore
+Vcs-Git: https://anonscm.debian.org/android-tools/android-platform-libcore.git
+Vcs-Browser: https://anonscm.debian.org/cgit/android-tools/android-platform-libcore.git
+
+Package: libdex-java
+Architecture: all
+Depends: ${misc:Depends}
+Description: Dalvik Executable Java library
+ Dalvik is a process virtual machine in Google's Android operating system that
+ executes applications written for Android.
+ .
+ This Java library provides APIs for Dalvik Executable.
