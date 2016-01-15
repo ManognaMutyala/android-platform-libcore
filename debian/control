@@ -8,7 +8,6 @@ Build-Depends: debhelper (>= 9),
 Build-Depends-Indep: default-jdk-doc,
                      gradle,
                      gradle-debian-helper,
-                     javahelper,
                      maven-repo-helper
 Standards-Version: 3.9.6
 Homepage: https://android.googlesource.com/platform/libcore

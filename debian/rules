@@ -9,7 +9,7 @@ GRADLE_OPTIONS = --project-prop androidVersion=$(ANDROID_VERSION) \
                  --settings-file debian/settings.gradle
 
 %:
-	dh $@ --with javahelper,jh_maven_repo_helper --buildsystem=gradle
+	dh $@ --with maven_repo_helper --buildsystem=gradle
 
 override_dh_auto_build:
 	dh_auto_build -- $(GRADLE_OPTIONS) assemble poms javadoc

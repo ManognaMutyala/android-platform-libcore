@@ -1,6 +1,5 @@
 include 'dex', 'json'
 
-project(':json').buildFileName = 'json.gradle'
 rootProject.children.each {
   it.projectDir = file("../${it.name}")
 }
