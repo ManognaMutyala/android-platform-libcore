@@ -18,9 +18,6 @@ override_dh_auto_clean:
 	dh_auto_clean
 	rm -r -f debian/.gradle
 
-override_jh_installlibs:
-	jh_installlibs --upstream-version=$(ANDROID_VERSION)
-
 get-orig-source: $(UPSTREAM_TAG).tar.gz
 	mk-origtargz --repack --compression xz $<
 
