@@ -1,8 +1,0 @@
-Document: libdex-java
-Title: Dalvik Executable Java Library Javadoc
-Author: The Android Open Source Project
-Section: Programming/Java
-
-Format: HTML
-Files: /usr/share/doc/libdex-java/api/*
-Index: /usr/share/doc/libdex-java/api/index.html

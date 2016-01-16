@@ -8,6 +8,7 @@ Build-Depends: debhelper (>= 9),
 Build-Depends-Indep: default-jdk-doc,
                      gradle,
                      gradle-debian-helper,
+                     javahelper,
                      maven-repo-helper
 Standards-Version: 3.9.6
 Homepage: https://android.googlesource.com/platform/libcore
@@ -27,7 +28,7 @@ Package: libdex-java-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: default-jdk-doc
+Recommends: default-jdk-doc, ${java:Recommends}
 Description: Dalvik Executable Java library - Documentation
  Dalvik is a process virtual machine in Google's Android operating system that
  executes applications written for Android.
@@ -53,7 +54,7 @@ Package: libandroid-json-java-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: default-jdk-doc
+Recommends: default-jdk-doc, ${java:Recommends}
 Description: Android rewrite of the evil licensed json.org - Documentation
  Json.org is a popular java library to parse and create JSON string from
  the author of the JSON standard Douglas Crockford. His implementation however

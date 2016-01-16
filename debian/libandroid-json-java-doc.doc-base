@@ -1,8 +1,0 @@
-Document: libandroid-json-java
-Title: Javadoc of AOSP Implementation of JSON
-Author: The Android Open Source Project
-Section: Programming/Java
-
-Format: HTML
-Files: /usr/share/doc/libandroid-json-java/api/*
-Index: /usr/share/doc/libandroid-json-java/api/index.html
