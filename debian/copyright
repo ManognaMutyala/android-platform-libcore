@@ -3,12 +3,61 @@ Source: https://android.googlesource.com/platform/libcore
 Files-Excluded: *.jar *.zip
 
 Files: *
-Copyright: 2005-2014 The Android Open Source Project
+Copyright: 2005-2014, The Android Open Source Project
 License: Apache-2.0
 
 Files: debian/*
-Copyright: 2015 Kai-Chung Yan <seamlikok@gmail.com>
+Copyright: 2016, Kai-Chung Yan <seamlikok@gmail.com>
 License: Apache-2.0
+
+Files: dom/*
+       luni/src/main/java/org/w3c/*
+       luni/src/test/java/tests/org/w3c/*
+Copyright: 2001-2004, World Wide Web Consortium
+License: BSD-3-clause
+
+Files: harmony-tests/*
+       luni/src/main/java/java/*
+       luni/src/main/java/javax/*
+       luni/src/main/java/org/apache/*
+       luni/src/test/java/org/apache/harmony/*
+       luni/src/test/java/serialization/org/apache/harmony/*
+Copyright: 2006, The Apache Software Foundation
+License: Apache-2.0
+
+Files: jsr166-tests/*
+Copyright: 2013, Doug Lea
+           2013, Andrew Wright
+           2013, Jeffrey Hayes
+           2013, Pat Fisher
+           2013, Mike Judd.
+License: public-domain
+
+Files: luni/src/main/java/java/nio/charset/CharsetDecoderICU.java
+       luni/src/main/java/java/nio/charset/CharsetEncoderICU.java
+       luni/src/main/java/java/nio/charset/CharsetICU.java
+       luni/src/main/java/libcore/icu/CollationElementIteratorICU.java
+       luni/src/main/java/libcore/icu/CollationKeyICU.java
+       luni/src/main/java/libcore/icu/NativeCollation.java
+       luni/src/main/java/libcore/icu/NativeConverter.java
+       luni/src/main/java/libcore/icu/RuleBasedCollatorICU.java
+       luni/src/main/native/libcore_icu_NativeCollation.cpp
+       luni/src/main/native/libcore_icu_NativeConverter.cpp
+Copyright: 1995-2014, International Business Machines Corporation and others
+License: MIT
+
+Files: luni/src/main/native/canonicalize_path.cpp
+Copyright: 2003, Constantin S. Svintsoff <kostik@iclub.nsu.ru>
+License:BSD-3-clause
+
+Files: luni/src/main/java/org/xml/*
+       xml/src/main/java/org/xmlpull/*
+Copyright: None
+License: public-domain
+
+Files: xml/src/main/java/org/kxml2/*
+Copyright: 2002-2003, Stefan Haustein, Oberhausen, Rhld., Germany
+License: MIT
 
 License: Apache-2.0
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,3 +71,52 @@ License: Apache-2.0
  .
  On Debian systems, the full text of the Apache License, Version 2.0
  can be found in the file `/usr/share/common-licenses/Apache-2.0'.
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+   * Redistributions of works must retain the original copyright notice, this
+     list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the original copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+   * Neither the name of the W3C nor the names of its contributors may be used
+     to endorse or promote products derived from this work without specific
+     prior written permission.
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the "Software"), to deal in
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, and/or sell copies of the
+ Software, and to permit persons to whom the Software is furnished to do so,
+ provided that the above copyright notice(s) and this permission notice appear
+ in all copies of the Software and that both the above copyright notice(s) and
+ this permission notice appear in supporting documentation.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN
+ NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE
+ LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY
+ DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ .
+ Except as contained in this notice, the name of a copyright holder shall not be
+ used in advertising or otherwise to promote the sale, use or other dealings in
+ this Software without prior written authorization of the copyright holder.
+
+License: public-domain
+ You can find the full text of "CC0 1.0 Universal (CC0 1.0): Public Domain
+ Dedication" at <http://creativecommons.org/publicdomain/zero/1.0>
