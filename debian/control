@@ -12,7 +12,7 @@ Build-Depends-Indep: default-jdk-doc,
                      maven-repo-helper
 Standards-Version: 3.9.7
 Homepage: https://android.googlesource.com/platform/libcore
-Vcs-Git: https://anonscm.debian.org/android-tools/android-platform-libcore.git
+Vcs-Git: https://anonscm.debian.org/git/android-tools/android-platform-libcore.git
 Vcs-Browser: https://anonscm.debian.org/cgit/android-tools/android-platform-libcore.git
 
 Package: libdex-java
