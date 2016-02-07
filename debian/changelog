@@ -1,14 +1,5 @@
-android-platform-libcore (6.0.1+r10-2) UNRELEASED; urgency=medium
-
-  * d/control: Standards-Version => 3.9.7 (No change)
-  * d/rules: Remove unused javahelper override
-  * Use javahelper to install Javadoc
-  * Fix Vcs-Git
-
- -- Kai-Chung Yan <seamlikok@gmail.com>  Thu, 04 Feb 2016 21:40:03 +0800
-
 android-platform-libcore (6.0.1+r10-1) unstable; urgency=low
 
   * Initial release (Closes: #795995)
 
- -- Kai-Chung Yan <seamlikok@gmail.com>  Fri, 15 Jan 2016 17:20:44 +0800
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Thu, 04 Feb 2016 21:40:03 +0800
