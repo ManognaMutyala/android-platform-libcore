@@ -1,3 +1,9 @@
+android-platform-libcore (6.0.1+r16-1) unstable; urgency=medium
+
+  * New upstream release to sync with all android-tools projects
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Tue, 16 Feb 2016 12:53:41 +0100
+
 android-platform-libcore (6.0.1+r10-2) unstable; urgency=medium
 
   * d/control: Standards-Version => 3.9.7 (No change)
