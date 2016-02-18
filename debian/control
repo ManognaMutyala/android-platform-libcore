@@ -3,19 +3,21 @@ Section: java
 Priority: optional
 Maintainer: Android tools Maintainer <android-tools-devel@lists.alioth.debian.org>
 Uploaders: Kai-Chung Yan <seamlikok@gmail.com>
-Build-Depends: debhelper (>= 9),
-               default-jdk
-Build-Depends-Indep: default-jdk-doc,
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: default-jdk,
+                     default-jdk-doc,
                      gradle,
-                     gradle-debian-helper,
                      javahelper,
+                     libicu4j-49-java,
+                     libkxml2-java,
+                     libxpp3-java,
                      maven-repo-helper
 Standards-Version: 3.9.7
 Homepage: https://android.googlesource.com/platform/libcore
 Vcs-Git: https://anonscm.debian.org/git/android-tools/android-platform-libcore.git
 Vcs-Browser: https://anonscm.debian.org/cgit/android-tools/android-platform-libcore.git
 
-Package: libdex-java
+Package: libandroid-dex-23-java
 Architecture: all
 Depends: ${misc:Depends}
 Description: Dalvik Executable Java library
@@ -24,7 +26,7 @@ Description: Dalvik Executable Java library
  .
  This Java library provides APIs for Dalvik Executable.
 
-Package: libdex-java-doc
+Package: libandroid-dex-23-java-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
@@ -66,3 +68,16 @@ Description: Android rewrite of the evil licensed json.org - Documentation
  [1] http://wiki.debian.org/qa.debian.org/jsonevil
  .
  This package contains the API Javadoc.
+
+Package: libandroid-luni-23-java
+Architecture: all
+Depends: ${java:Depends}, ${misc:Depends}
+Description: Language, utils, network, IO of Android Frameworks
+ This pacakge provides parts of Android Framework of API Level 23 (Marshmallow).
+
+Package: libandroid-luni-23-java-doc
+Architecture: all
+Section: doc
+Depends: default-jdk-doc, ${java:Recommends}
+Description: Language, utils, network, IO of Android Frameworks - Documentations
+ This pacakge provides Javadoc for libandroid-luni-23-java

@@ -1,0 +1,1 @@
+debian/luni.pom --artifact=luni/build/libs/dex-*.jar --java-lib --usj-name=com.android.luni

@@ -3,20 +3,20 @@
 include /usr/share/dpkg/pkg-info.mk
 
 UPSTREAM_TAG = android-$(subst +,_,$(DEB_VERSION_UPSTREAM))
-ANDROID_VERSION = $(subst +r,.,$(DEB_VERSION_UPSTREAM))
-GRADLE_OPTIONS = --project-prop androidVersion=$(ANDROID_VERSION) \
-                 --build-file debian/build.gradle \
-                 --settings-file debian/settings.gradle
+GRADLE_OPTIONS = --settings-file debian/settings.gradle --offline \
+                 --gradle-user-home debian/.gradlehome
 
 %:
-	dh $@ --with maven_repo_helper,javahelper --buildsystem=gradle
+	dh $@ --with maven_repo_helper
 
 override_dh_auto_build:
-	dh_auto_build -- $(GRADLE_OPTIONS) assemble poms javadoc
+	gradle $(GRADLE_OPTIONS) assemble poms javadoc
+	jh_depends
 
 override_dh_auto_clean:
-	dh_auto_clean
-	rm -r -f debian/.gradle
+	gradle $(GRADLE_OPTIONS) clean
+	$(RM) -r debian/.gradle debian/.gradlehome .gradle
+	$(RM) debian/*.pom
 
 get-orig-source:
 	wget --continue https://android.googlesource.com/platform/libcore/+archive/$(UPSTREAM_TAG).tar.gz

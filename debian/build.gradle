@@ -2,12 +2,28 @@ subprojects {
   apply plugin: 'java'
   apply plugin: 'maven'
 
-  if (project.name.equals('luni')) {
-    version = 23
-  } else {
-    version = 0
-  }
+  /* See the API Level defined in version_defaults.mk provided by
+   * src:android-platform-build.
+   */
+  version = '23'
   group = 'com.android'
+
+  repositories {
+    maven { url 'file:///usr/share/maven-repo' }
+  }
+
+  if (name.equals('luni')) {
+    sourceSets.main.java {
+      srcDir '../dalvik/src/main/java'
+      srcDir '../libart/src/main/java'
+    }
+    dependencies {
+      compile 'xpp3:xpp3:debian'
+      compile 'kxml2:kxml2:debian'
+      compile 'com.ibm.icu:icu4j:56'
+      compile project(':dex')
+    }
+  }
   
   javadoc {
     options {
@@ -21,10 +37,6 @@ subprojects {
         artifactId project.name
         version project.version
       }
-    }.writeTo("${buildDir}/${project.name}.pom")
-  }
-
-  clean.doLast {
-    delete("${buildDir}/*.pom")
+    }.writeTo("../debian/${project.name}.pom")
   }
 }

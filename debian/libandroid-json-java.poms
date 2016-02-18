@@ -1,1 +1,1 @@
-json/build/json.pom --artifact=json/build/libs/json-*.jar --java-lib --usj-name=android-json
+debian/json.pom --artifact=json/build/libs/json-*.jar --java-lib --usj-name=com.android.json
