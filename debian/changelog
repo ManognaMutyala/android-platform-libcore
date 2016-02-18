@@ -1,8 +1,10 @@
-android-platform-libcore (6.0.1+r16-1) unstable; urgency=medium
+android-platform-libcore (6.0.1+r16-1) UNRELEASED; urgency=medium
 
+  [ Hans-Christoph Steiner ]
   * New upstream release to sync with all android-tools projects
+  * New package: libluni23-java
 
- -- Hans-Christoph Steiner <hans@eds.org>  Tue, 16 Feb 2016 12:53:41 +0100
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Thu, 18 Feb 2016 20:35:30 +0800
 
 android-platform-libcore (6.0.1+r10-2) unstable; urgency=medium
 

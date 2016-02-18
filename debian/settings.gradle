@@ -1,4 +1,4 @@
-include 'dex', 'json'
+include 'dex', 'json', 'luni'
 
 rootProject.children.each {
   it.projectDir = file("../${it.name}")

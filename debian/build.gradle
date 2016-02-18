@@ -2,7 +2,11 @@ subprojects {
   apply plugin: 'java'
   apply plugin: 'maven'
 
-  version = androidVersion
+  if (project.name.equals('luni')) {
+    version = 23
+  } else {
+    version = 0
+  }
   group = 'com.android'
   
   javadoc {

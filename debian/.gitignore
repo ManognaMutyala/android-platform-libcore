@@ -6,6 +6,7 @@
 *.pom
 *.substvars
 build/
+debhelper-build-stamp
 files
 libandroid-json-java*/
 libdex-java*/
