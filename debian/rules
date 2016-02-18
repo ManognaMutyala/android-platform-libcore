@@ -18,8 +18,5 @@ override_dh_auto_clean:
 	dh_auto_clean
 	rm -r -f debian/.gradle
 
-get-orig-source: $(UPSTREAM_TAG).tar.gz
-	mk-origtargz --repack --compression xz $<
-
-$(UPSTREAM_TAG).tar.gz:
-	wget https://android.googlesource.com/platform/libcore/+archive/$(UPSTREAM_TAG).tar.gz
+get-orig-source:
+	wget --continue https://android.googlesource.com/platform/libcore/+archive/$(UPSTREAM_TAG).tar.gz
