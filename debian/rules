@@ -7,16 +7,21 @@ GRADLE_OPTIONS = --settings-file debian/settings.gradle --offline \
                  --gradle-user-home debian/.gradlehome
 
 %:
-	dh $@ --with maven_repo_helper
+	dh $@ --with maven_repo_helper,javahelper
 
 override_dh_auto_build:
 	gradle $(GRADLE_OPTIONS) assemble poms javadoc
 	jh_depends
 
 override_dh_auto_clean:
+	dh_auto_clean
 	gradle $(GRADLE_OPTIONS) clean
 	$(RM) -r debian/.gradle debian/.gradlehome .gradle
 	$(RM) debian/*.pom
+
+override_jh_installlibs:
+	# JAR installation is done by maven-repo-helper
+	jh_installlibs --no-act
 
 get-orig-source:
 	wget --continue https://android.googlesource.com/platform/libcore/+archive/$(UPSTREAM_TAG).tar.gz

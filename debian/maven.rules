@@ -1,0 +1,3 @@
+com.android dex * s/.*/23/ * *
+com.android luni * s/.*/23/ * *
+com.ibm.icu icu4j * s/.*/56/ * *

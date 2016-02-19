@@ -10,25 +10,26 @@ subprojects {
 
   repositories {
     maven { url 'file:///usr/share/maven-repo' }
+    flatDir { dir '/home/seamlik/Desktop' }
   }
 
   if (name.equals('luni')) {
     sourceSets.main.java {
       srcDir '../dalvik/src/main/java'
       srcDir '../libart/src/main/java'
+      srcDir '../xml/src/main/java'
     }
     dependencies {
-      compile 'xpp3:xpp3:debian'
-      compile 'kxml2:kxml2:debian'
       compile 'com.ibm.icu:icu4j:56'
       compile project(':dex')
     }
-  }
-  
-  javadoc {
-    options {
-      links 'file:///usr/share/doc/default-jdk-doc/api'
+    jar.manifest {
+      attributes 'Class-Path': "/usr/share/java/com.android.dex-${project.version}.jar /usr/share/java/icu4j-56.jar"
     }
+  }
+
+  javadoc.options {
+    links 'file:///usr/share/doc/default-jdk-doc/api'
   }
 
   task poms {

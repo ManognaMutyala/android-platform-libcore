@@ -1,12 +1,15 @@
 .debhelper/
 .gradle/
 .gradlehome/
+.javahelper_clean
 .mh/
+*.doc-base.javadoc
 *.log
 *.pom
 *.substvars
 build/
 debhelper-build-stamp
 files
+libandroid-dex-23-java*/
 libandroid-json-java*/
-libdex-java*/
+libandroid-luni-23-java*/

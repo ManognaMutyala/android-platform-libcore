@@ -1,1 +1,1 @@
-debian/dex.pom --artifact=dex/build/libs/dex-*.jar --java-lib --usj-name=com.android.dex
+debian/dex.pom --artifact=dex/build/libs/dex-*.jar --java-lib --usj-name=com.android.dex --no-usj-versionless

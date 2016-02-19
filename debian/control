@@ -3,15 +3,12 @@ Section: java
 Priority: optional
 Maintainer: Android tools Maintainer <android-tools-devel@lists.alioth.debian.org>
 Uploaders: Kai-Chung Yan <seamlikok@gmail.com>
-Build-Depends: debhelper (>= 9)
-Build-Depends-Indep: default-jdk,
-                     default-jdk-doc,
-                     gradle,
-                     javahelper,
-                     libicu4j-49-java,
-                     libkxml2-java,
-                     libxpp3-java,
-                     maven-repo-helper
+Build-Depends: debhelper (>= 9),
+               default-jdk,
+               default-jdk-doc,
+               gradle,
+               javahelper,
+               maven-repo-helper
 Standards-Version: 3.9.7
 Homepage: https://android.googlesource.com/platform/libcore
 Vcs-Git: https://anonscm.debian.org/git/android-tools/android-platform-libcore.git
@@ -30,7 +27,7 @@ Package: libandroid-dex-23-java-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: default-jdk-doc, ${java:Recommends}
+Recommends: default-jdk-doc
 Description: Dalvik Executable Java library - Documentation
  Dalvik is a process virtual machine in Google's Android operating system that
  executes applications written for Android.
@@ -56,7 +53,7 @@ Package: libandroid-json-java-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: default-jdk-doc, ${java:Recommends}
+Recommends: default-jdk-doc
 Description: Android rewrite of the evil licensed json.org - Documentation
  Json.org is a popular java library to parse and create JSON string from
  the author of the JSON standard Douglas Crockford. His implementation however
@@ -73,11 +70,12 @@ Package: libandroid-luni-23-java
 Architecture: all
 Depends: ${java:Depends}, ${misc:Depends}
 Description: Language, utils, network, IO of Android Frameworks
- This pacakge provides parts of Android Framework of API Level 23 (Marshmallow).
+ This package provides parts of Android Framework of API Level 23 (Marshmallow).
 
 Package: libandroid-luni-23-java-doc
 Architecture: all
 Section: doc
-Depends: default-jdk-doc, ${java:Recommends}
+Depends: ${misc:Depends}
+Recommends: default-jdk-doc
 Description: Language, utils, network, IO of Android Frameworks - Documentations
- This pacakge provides Javadoc for libandroid-luni-23-java
+ This package provides Javadoc for libandroid-luni-23-java
