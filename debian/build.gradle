@@ -2,10 +2,14 @@ subprojects {
   apply plugin: 'java'
   apply plugin: 'maven'
 
-  /* See the API Level defined in version_defaults.mk provided by
-   * src:android-platform-build.
-   */
-  version = '23'
+
+  if (name.equals('json')) {
+    version = '0'
+  } else {
+    // See the API Level defined in version_defaults.mk provided by
+    // src:android-platform-build.
+    version = '23'
+  }
   group = 'com.android'
 
   repositories {
