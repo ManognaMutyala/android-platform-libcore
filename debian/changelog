@@ -5,10 +5,10 @@ android-platform-libcore (6.0.1+r16-1) UNRELEASED; urgency=medium
 
   [ Kai-Chung Yan ]
   * New package: android-platform-libcore-source
-  * Set dex.jar to version API Level 23 (Following android.jar)
+  * Set dex.jar to version 0 (Upstream never version it)
   * Set json.jar to version 0 (Upstream never version it)
   * Add groupId to filename for json and dex (Upstream does not name them)
-  * Change package name: libdex-java => libandroid-dex-23-java
+  * Rename package: libdex-java => libandroid-dex-java
   * d/control: Move all BD-Indep to BD since there is no arch packages
   * d/copyright: Improvements
 

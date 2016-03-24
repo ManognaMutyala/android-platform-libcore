@@ -11,5 +11,5 @@ android-platform-libcore-6.0.1-source/
 build/
 debhelper-build-stamp
 files
-libandroid-dex-23-java*/
+libandroid-dex-java*/
 libandroid-json-java*/

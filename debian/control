@@ -14,7 +14,7 @@ Homepage: https://android.googlesource.com/platform/libcore
 Vcs-Git: https://anonscm.debian.org/git/android-tools/android-platform-libcore.git
 Vcs-Browser: https://anonscm.debian.org/cgit/android-tools/android-platform-libcore.git
 
-Package: libandroid-dex-23-java
+Package: libandroid-dex-java
 Architecture: all
 Depends: ${misc:Depends}
 Description: Dalvik Executable Java library
@@ -23,7 +23,7 @@ Description: Dalvik Executable Java library
  .
  This Java library provides APIs for Dalvik Executable.
 
-Package: libandroid-dex-23-java-doc
+Package: libandroid-dex-java-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
