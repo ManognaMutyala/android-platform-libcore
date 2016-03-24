@@ -66,16 +66,13 @@ Description: Android rewrite of the evil licensed json.org - Documentation
  .
  This package contains the API Javadoc.
 
-Package: libandroid-luni-23-java
+Package: android-platform-libcore-6.0.1-source
 Architecture: all
-Depends: ${java:Depends}, ${misc:Depends}
-Description: Language, utils, network, IO of Android Frameworks
- This package provides parts of Android Framework of API Level 23 (Marshmallow).
-
-Package: libandroid-luni-23-java-doc
-Architecture: all
-Section: doc
 Depends: ${misc:Depends}
-Recommends: default-jdk-doc
-Description: Language, utils, network, IO of Android Frameworks - Documentations
- This package provides Javadoc for libandroid-luni-23-java
+Description: lang, utils, network, IO of Android Frameworks - Source code
+ This package provides the Java source code of portions of the Android Framework
+ of API Level 23 (Marshmallow).
+ .
+ The Android Framework "android.jar" should be built into one single artifact.
+ However AOSP has separated the source code into two places, that's why this
+ package is released as source code.

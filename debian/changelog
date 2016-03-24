@@ -4,7 +4,7 @@ android-platform-libcore (6.0.1+r16-1) UNRELEASED; urgency=medium
   * New upstream release to sync with all android-tools projects
 
   [ Kai-Chung Yan ]
-  * New package: libandroid-luni-23-java
+  * New package: android-platform-libcore-source
   * Set dex.jar to version API Level 23 (Following android.jar)
   * Set json.jar to version 0 (Upstream never version it)
   * Add groupId to filename for json and dex (Upstream does not name them)

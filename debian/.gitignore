@@ -7,9 +7,9 @@
 *.log
 *.pom
 *.substvars
+android-platform-libcore-6.0.1-source/
 build/
 debhelper-build-stamp
 files
 libandroid-dex-23-java*/
 libandroid-json-java*/
-libandroid-luni-23-java*/

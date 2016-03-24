@@ -2,35 +2,8 @@ subprojects {
   apply plugin: 'java'
   apply plugin: 'maven'
 
-
-  if (name.equals('json')) {
-    version = '0'
-  } else {
-    // See the API Level defined in version_defaults.mk provided by
-    // src:android-platform-build.
-    version = '23'
-  }
+  version = '0'
   group = 'com.android'
-
-  repositories {
-    maven { url 'file:///usr/share/maven-repo' }
-    flatDir { dir '/home/seamlik/Desktop' }
-  }
-
-  if (name.equals('luni')) {
-    sourceSets.main.java {
-      srcDir '../dalvik/src/main/java'
-      srcDir '../libart/src/main/java'
-      srcDir '../xml/src/main/java'
-    }
-    dependencies {
-      compile 'com.ibm.icu:icu4j:56'
-      compile project(':dex')
-    }
-    jar.manifest {
-      attributes 'Class-Path': "/usr/share/java/com.android.dex-${project.version}.jar /usr/share/java/icu4j-56.jar"
-    }
-  }
 
   javadoc.options {
     links 'file:///usr/share/doc/default-jdk-doc/api'

@@ -1,1 +1,0 @@
-debian/luni.pom --artifact=luni/build/libs/luni-*.jar --java-lib --usj-name=com.android.luni --no-usj-versionless
