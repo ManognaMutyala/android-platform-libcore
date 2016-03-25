@@ -1,5 +1,5 @@
-dalvik/src/main usr/src/android-platform-libcore-6.0.1+r16/dalvik
-dex/src/main    usr/src/android-platform-libcore-6.0.1+r16/dex
-libart/src/main usr/src/android-platform-libcore-6.0.1+r16/libart
-luni/src/main   usr/src/android-platform-libcore-6.0.1+r16/luni
-xml/src/main    usr/src/android-platform-libcore-6.0.1+r16/xml
+dalvik/src/main usr/src/android-platform-libcore-6.0.1/dalvik
+dex/src/main    usr/src/android-platform-libcore-6.0.1/dex
+libart/src/main usr/src/android-platform-libcore-6.0.1/libart
+luni/src/main   usr/src/android-platform-libcore-6.0.1/luni
+xml/src/main    usr/src/android-platform-libcore-6.0.1/xml
