@@ -7,7 +7,7 @@
 *.log
 *.pom
 *.substvars
-android-platform-libcore-6.0.1-source/
+android-platform-libcore-source-6.0.1/
 build/
 debhelper-build-stamp
 files

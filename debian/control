@@ -39,6 +39,8 @@ Description: Dalvik Executable Java library - Documentation
 Package: libandroid-json-java
 Architecture: all
 Depends: ${misc:Depends}
+Breaks: libdex-java
+Replaces: libdex-java
 Description: Android rewrite of the evil licensed json.org
  Json.org is a popular java library to parse and create JSON string from
  the author of the JSON standard Douglas Crockford. His implementation however
@@ -66,7 +68,7 @@ Description: Android rewrite of the evil licensed json.org - Documentation
  .
  This package contains the API Javadoc.
 
-Package: android-platform-libcore-6.0.1-source
+Package: android-platform-libcore-source-6.0.1
 Architecture: all
 Depends: ${misc:Depends}
 Description: lang, utils, network, IO of Android Frameworks - Source code
