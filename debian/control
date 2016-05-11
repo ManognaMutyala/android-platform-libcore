@@ -63,8 +63,8 @@ Description: Android rewrite of the evil licensed json.org - Documentation
 Package: android-platform-libcore-source-6.0.1
 Architecture: all
 Depends: ${misc:Depends}
-Description: lang, utils, network, IO of Android Frameworks - Source code
- This package provides the Java source code of portions of the Android Framework
+Description: Partial source code of the Android platform framework
+ This package provides the Java source code of portions of the Android framework
  of API Level 23 (Marshmallow).
  .
  The Android Framework "android.jar" should be built into one single artifact.
@@ -74,7 +74,7 @@ Description: lang, utils, network, IO of Android Frameworks - Source code
 Package: libandroid-luni-java
 Architecture: all
 Depends: ${java:Depends}, ${misc:Depends}
-Description: lang, utils, network, I/O of Android frameworks
+Description: lang, utils, networking, I/O of the Android platform framework
  This library is part of Android's platform framework focusing on the Java
  language, miscellaneous utils, networking, and input/output.
  .
