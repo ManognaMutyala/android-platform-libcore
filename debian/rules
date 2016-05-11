@@ -10,7 +10,7 @@ GRADLE_OPTIONS = --settings-file debian/settings.gradle --offline \
 	dh $@ --with maven_repo_helper,javahelper
 
 override_dh_auto_build:
-	gradle $(GRADLE_OPTIONS) assemble poms :dex:javadoc :json:javadoc
+	gradle $(GRADLE_OPTIONS) assemble poms :json:javadoc
 	jh_depends
 
 override_dh_auto_clean:

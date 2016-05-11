@@ -25,19 +25,8 @@ Description: Dalvik Executable Java library
  executes applications written for Android.
  .
  This Java library provides APIs for Dalvik Executable.
-
-Package: libandroid-dex-java-doc
-Section: doc
-Architecture: all
-Depends: ${misc:Depends}
-Recommends: default-jdk-doc
-Description: Dalvik Executable Java library - Documentation
- Dalvik is a process virtual machine in Google's Android operating system that
- executes applications written for Android.
  .
- This Java library provides APIs for Dalvik Executable.
- .
- This package contains the API Javadoc.
+ The Javadoc of this library is included in libandroid-java-doc.
 
 Package: libandroid-json-java
 Architecture: all
