@@ -20,6 +20,8 @@ Vcs-Browser: https://anonscm.debian.org/cgit/android-tools/android-platform-libc
 Package: libandroid-dex-java
 Architecture: all
 Depends: ${misc:Depends}
+Breaks: libdex-java
+Replaces: libdex-java
 Description: Dalvik Executable Java library
  Dalvik is a process virtual machine in Google's Android operating system that
  executes applications written for Android.
@@ -31,8 +33,6 @@ Description: Dalvik Executable Java library
 Package: libandroid-json-java
 Architecture: all
 Depends: ${misc:Depends}
-Breaks: libdex-java
-Replaces: libdex-java
 Description: Android rewrite of the evil licensed json.org
  Json.org is a popular java library to parse and create JSON string from
  the author of the JSON standard Douglas Crockford. His implementation however
