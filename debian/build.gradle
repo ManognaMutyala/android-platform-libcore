@@ -4,6 +4,10 @@ subprojects {
 
   version = '0'
   group = 'com.android'
+  
+  repositories {
+    maven { url '/usr/share/maven-repo' }
+  }
 
   javadoc.options {
     links 'file:///usr/share/doc/default-jdk-doc/api'
@@ -16,5 +20,30 @@ subprojects {
         version project.version
       }
     }.writeTo("../debian/${project.name}.pom")
+  }
+}
+
+project(':luni') {
+  dependencies {
+    compile 'com.ibm.icu:icu4j:debian'
+    compile 'kxml2:kxml2:debian'
+    compile 'xpp3:xpp3:debian'
+    compile project(':dex')
+  }
+
+  sourceSets.main.java {
+    srcDir '../dalvik/src/main/java'
+    srcDir '../libart/src/main/java'
+    srcDir '../xml/src/main/java'
+  }
+
+  jar.manifest {
+    attributes 'Class-Path': configurations.compile.getDependencies().collect {
+      if (it instanceof org.gradle.api.artifacts.ProjectDependency) {
+        "/usr/share/java/com.android.${it.name}.jar"
+      } else {
+        "/usr/share/java/${it.name}.jar"
+      }
+    }.join(' ')
   }
 }

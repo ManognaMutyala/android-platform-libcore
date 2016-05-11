@@ -8,6 +8,9 @@ Build-Depends: debhelper (>= 9),
                default-jdk-doc,
                gradle,
                javahelper,
+               libicu4j-java (>= 56.1),
+               libkxml2-java,
+               libxpp3-java,
                maven-repo-helper
 Standards-Version: 3.9.7
 Homepage: https://android.googlesource.com/platform/libcore
@@ -78,3 +81,12 @@ Description: lang, utils, network, IO of Android Frameworks - Source code
  The Android Framework "android.jar" should be built into one single artifact.
  However AOSP has separated the source code into two places, that's why this
  package is released as source code.
+
+Package: libandroid-luni-java
+Architecture: all
+Depends: ${java:Depends}, ${misc:Depends}
+Description: lang, utils, network, I/O of Android frameworks
+ This library is part of Android's platform framework focusing on the Java
+ language, miscellaneous utils, networking, and input/output.
+ .
+ The Javadoc of this library is included in libandroid-java-doc.
