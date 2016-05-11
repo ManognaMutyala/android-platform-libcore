@@ -18,5 +18,10 @@ override_dh_auto_clean:
 	$(RM) -r debian/.gradle debian/.gradlehome .gradle
 	$(RM) debian/*.pom
 
+override_dh_install:
+	dh_install
+	chmod -x debian/android-platform-libcore-source-6.0.1/usr/src/android-platform-libcore-6.0.1/libart/main/java/java/lang/reflect/Proxy.java
+	chmod -x debian/android-platform-libcore-source-6.0.1/usr/src/android-platform-libcore-6.0.1/luni/main/files/README.cacerts
+
 get-orig-source:
 	wget --continue https://android.googlesource.com/platform/libcore/+archive/$(UPSTREAM_TAG).tar.gz
