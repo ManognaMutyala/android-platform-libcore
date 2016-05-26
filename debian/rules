@@ -20,7 +20,6 @@ override_dh_auto_clean:
 	dh_auto_clean
 	gradle $(GRADLE_FLAGS) clean
 	$(RM) -r debian/.gradle debian/.gradlehome .gradle
-	$(RM) debian/*.pom
 
 override_dh_install:
 	dh_install

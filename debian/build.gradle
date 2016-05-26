@@ -10,9 +10,14 @@ subprojects {
   }
 
   task poms {
+  outputs.files "${buildDir}/${project.name}.pom"
     pom {
       project {}
-    }.writeTo("../debian/${project.name}.pom")
+    }.writeTo("${buildDir}/${project.name}.pom")
+  }
+
+  clean.doLast {
+    delete "${buildDir}/${project.name}.pom"
   }
 }
 
