@@ -5,7 +5,6 @@ Maintainer: Android tools Maintainer <android-tools-devel@lists.alioth.debian.or
 Uploaders: Kai-Chung Yan <seamlikok@gmail.com>
 Build-Depends: debhelper (>= 9),
                default-jdk,
-               default-jdk-doc,
                gradle,
                javahelper,
                libicu4j-java (>= 56.1),
@@ -41,24 +40,9 @@ Description: Android rewrite of the evil licensed json.org
  Therefor the Android team did a cleanroom reimplementation of a JSON library
  to be used in place of the original one.
  .
- [1] http://wiki.debian.org/qa.debian.org/jsonevil
- 
-Package: libandroid-json-java-doc
-Section: doc
-Architecture: all
-Depends: ${misc:Depends}
-Recommends: default-jdk-doc
-Description: Android rewrite of the evil licensed json.org - Documentation
- Json.org is a popular java library to parse and create JSON string from
- the author of the JSON standard Douglas Crockford. His implementation however
- is not free software[1].
- .
- Therefor the Android team did a cleanroom reimplementation of a JSON library
- to be used in place of the original one.
+ The Javadoc of this library is included in libandroid-*-java-doc.
  .
  [1] http://wiki.debian.org/qa.debian.org/jsonevil
- .
- This package contains the API Javadoc.
 
 Package: android-platform-libcore-source-6.0.1
 Architecture: all

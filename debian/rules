@@ -14,7 +14,7 @@ endif
 	dh $@ --with maven_repo_helper,javahelper
 
 override_dh_auto_build:
-	gradle $(GRADLE_FLAGS) assemble poms :json:javadoc
+	gradle $(GRADLE_FLAGS) assemble poms
 
 override_dh_auto_clean:
 	dh_auto_clean

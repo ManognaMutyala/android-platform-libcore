@@ -9,10 +9,6 @@ subprojects {
     maven { url '/usr/share/maven-repo' }
   }
 
-  javadoc.options {
-    links 'file:///usr/share/doc/default-jdk-doc/api'
-  }
-
   task poms {
     pom {
       project {}
