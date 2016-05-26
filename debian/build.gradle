@@ -2,7 +2,7 @@ subprojects {
   apply plugin: 'java'
   apply plugin: 'maven'
 
-  version = '0'
+  version = 'android-6.0.1'
   group = 'com.android'
   
   repositories {
@@ -15,10 +15,7 @@ subprojects {
 
   task poms {
     pom {
-      project {
-        artifactId project.name
-        version project.version
-      }
+      project {}
     }.writeTo("../debian/${project.name}.pom")
   }
 }
