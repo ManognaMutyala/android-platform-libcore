@@ -11,7 +11,7 @@ Build-Depends: debhelper (>= 9),
                libkxml2-java,
                libxpp3-java,
                maven-repo-helper
-Standards-Version: 3.9.7
+Standards-Version: 3.9.8
 Homepage: https://android.googlesource.com/platform/libcore
 Vcs-Git: https://anonscm.debian.org/git/android-tools/android-platform-libcore.git
 Vcs-Browser: https://anonscm.debian.org/cgit/android-tools/android-platform-libcore.git
