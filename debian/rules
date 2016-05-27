@@ -3,8 +3,10 @@
 include /usr/share/dpkg/pkg-info.mk
 
 UPSTREAM_TAG = android-$(subst +,_,$(DEB_VERSION_UPSTREAM))
+ANDROID_VERSION = $(shell echo $(DEB_VERSION_UPSTREAM) | sed --expression="s/\+r.*//")
 GRADLE_FLAGS = --settings-file debian/settings.gradle --offline \
-               --gradle-user-home debian/.gradlehome
+               --gradle-user-home debian/.gradlehome \
+               --project-prop androidVersion=$(ANDROID_VERSION)
 ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
   NUMTHREADS = $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
   GRADLE_FLAGS += --parallel --max-workers=$(NUMTHREADS)

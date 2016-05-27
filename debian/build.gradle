@@ -2,7 +2,7 @@ subprojects {
   apply plugin: 'java'
   apply plugin: 'maven'
 
-  version = 'android-6.0.1'
+  version = "android-$androidVersion"
   group = 'com.android'
   
   repositories {
