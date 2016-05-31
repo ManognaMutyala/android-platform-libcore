@@ -12,10 +12,10 @@ android-platform-libcore (6.0.1+r16-1) UNRELEASED; urgency=medium
   * d/copyright: Refinements
   * New package: libandroid-luni-java
   * Remove package: libandroid-dex-java-doc since it is included in
-    libandroid-java-doc
+    libandroid-{API-Level}-java-doc
   * Enable parallel build for Gradle
   * Remove libandroid-json-doc since the Javadoc is included in
-    libandroid-*-java-doc
+    libandroid-{API-Level}-java-doc
   * Standards-Version => 3.9.8 (no changes)
 
  -- Kai-Chung Yan <seamlikok@gmail.com>  Thu, 18 Feb 2016 20:35:30 +0800
