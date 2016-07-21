@@ -1,4 +1,4 @@
-android-platform-libcore (6.0.1+r16-1) UNRELEASED; urgency=medium
+android-platform-libcore (6.0.1+r55-1) UNRELEASED; urgency=medium
 
   [ Hans-Christoph Steiner ]
   * New upstream release to sync with all android-tools projects
@@ -18,7 +18,12 @@ android-platform-libcore (6.0.1+r16-1) UNRELEASED; urgency=medium
     libandroid-{API-Level}-java-doc
   * Standards-Version => 3.9.8 (no changes)
 
- -- Kai-Chung Yan <seamlikok@gmail.com>  Thu, 18 Feb 2016 20:35:30 +0800
+  [ Chirayu Desai ]
+  * New upstream release.
+  * debian: Add watch file for usage with uscan
+  * debian/watch: recompress using xz
+
+ -- Chirayu Desai <chirayudesai1@gmail.com>  Fri, 22 Jul 2016 00:26:27 +0530
 
 android-platform-libcore (6.0.1+r10-2) unstable; urgency=medium
 
