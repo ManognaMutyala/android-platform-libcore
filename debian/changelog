@@ -4,18 +4,13 @@ android-platform-libcore (6.0.1+r55-1) UNRELEASED; urgency=medium
   * New upstream release to sync with all android-tools projects
 
   [ Kai-Chung Yan ]
-  * New package: android-platform-libcore-source
   * Set JARs version to "android-6.0.1"
   * Add groupId to JAR filename (Upstream does not name them)
   * Rename package: libdex-java => libandroid-dex-java
   * d/control: Move all BD-Indep to BD since there is no arch packages
   * d/copyright: Refinements
   * New package: libandroid-luni-java
-  * Remove package: libandroid-dex-java-doc since it is included in
-    libandroid-{API-Level}-java-doc
-  * Enable parallel build for Gradle
-  * Remove libandroid-json-doc since the Javadoc is included in
-    libandroid-{API-Level}-java-doc
+  * Remove Javadoc packages: Provided by libandroid-${version}-java-doc
   * Standards-Version => 3.9.8 (no changes)
 
   [ Chirayu Desai ]
@@ -23,7 +18,7 @@ android-platform-libcore (6.0.1+r55-1) UNRELEASED; urgency=medium
   * debian: Add watch file for usage with uscan
   * debian/watch: recompress using xz
 
- -- Chirayu Desai <chirayudesai1@gmail.com>  Fri, 22 Jul 2016 00:26:27 +0530
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Tue, 26 Jul 2016 15:34:52 +0800
 
 android-platform-libcore (6.0.1+r10-2) unstable; urgency=medium
 
