@@ -26,8 +26,6 @@ Description: Dalvik Executable Java library
  executes applications written for Android.
  .
  This Java library provides APIs for Dalvik Executable.
- .
- The Javadoc of this library is included in libandroid-java-doc.
 
 Package: libandroid-json-java
 Architecture: all
@@ -44,17 +42,6 @@ Description: Android rewrite of the evil licensed json.org
  .
  [1] http://wiki.debian.org/qa.debian.org/jsonevil
 
-Package: android-platform-libcore-source-6.0.1
-Architecture: all
-Depends: ${misc:Depends}
-Description: Partial source code of the Android platform framework
- This package provides the Java source code of portions of the Android framework
- of API Level 23 (Marshmallow).
- .
- The Android Framework "android.jar" should be built into one single artifact.
- However AOSP has separated the source code into two places, that's why this
- package is released as source code.
-
 Package: libandroid-luni-java
 Architecture: all
 Depends: libandroid-dex-java (>= ${binary:Version}),
@@ -65,5 +52,3 @@ Depends: libandroid-dex-java (>= ${binary:Version}),
 Description: lang, utils, networking, I/O of the Android platform framework
  This library is part of Android's platform framework focusing on the Java
  language, miscellaneous utils, networking, and input/output.
- .
- The Javadoc of this library is included in libandroid-java-doc.
