@@ -4,20 +4,16 @@ subprojects {
 
   version = "android-$androidVersion"
   group = 'com.android'
-  
-  repositories {
-    maven { url '/usr/share/maven-repo' }
-  }
 
-  task poms {
-  outputs.files "${buildDir}/${project.name}.pom"
-    pom {
-      project {}
-    }.writeTo("${buildDir}/${project.name}.pom")
-  }
-
-  clean.doLast {
-    delete "${buildDir}/${project.name}.pom"
+  task generatePom {
+    outputs.files "${buildDir}/${project.name}.pom"
+    assemble.dependsOn generatePom
+    clean.doLast {
+      delete "${buildDir}/${project.name}.pom"
+    }
+    doFirst {
+      pom { project {} }.writeTo("${buildDir}/${project.name}.pom")
+    }
   }
 }
 
