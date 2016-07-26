@@ -52,3 +52,9 @@ Depends: libandroid-dex-java (>= ${binary:Version}),
 Description: lang, utils, networking, I/O of the Android platform framework
  This library is part of Android's platform framework focusing on the Java
  language, miscellaneous utils, networking, and input/output.
+
+Package: libdex-java
+Architecture: all
+Depends: libandroid-dex-java (= ${binary:Version}), ${misc:Depends}
+Description: Dalvik Executable Java library - Transitional dummy package
+ This package is transitional and can be safely removed.
