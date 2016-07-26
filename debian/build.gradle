@@ -34,14 +34,4 @@ project(':luni') {
     srcDir '../libart/src/main/java'
     srcDir '../xml/src/main/java'
   }
-
-  jar.manifest {
-    attributes 'Class-Path': configurations.compile.getDependencies().collect {
-      if (it instanceof org.gradle.api.artifacts.ProjectDependency) {
-        "/usr/share/java/com.android.${it.name}.jar"
-      } else {
-        "/usr/share/java/${it.name}.jar"
-      }
-    }.join(' ')
-  }
 }
