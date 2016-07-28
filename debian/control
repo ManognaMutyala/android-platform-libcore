@@ -19,8 +19,8 @@ Vcs-Browser: https://anonscm.debian.org/cgit/android-tools/android-platform-libc
 Package: libandroid-dex-java
 Architecture: all
 Depends: ${misc:Depends}
-Breaks: libdex-java
-Replaces: libdex-java
+Breaks: libdex-java (<< 6.0.1+r55-1~)
+Replaces: libdex-java (<< 6.0.1+r55-1~)
 Description: Dalvik Executable Java library
  Dalvik is a process virtual machine in Google's Android operating system that
  executes applications written for Android.
