@@ -55,6 +55,6 @@ Description: lang, utils, networking, I/O of the Android platform framework
 
 Package: libdex-java
 Architecture: all
-Depends: libandroid-dex-java (= ${binary:Version}), ${misc:Depends}
+Depends: libandroid-dex-java, ${misc:Depends}
 Description: Dalvik Executable Java library - Transitional dummy package
  This package is transitional and can be safely removed.
