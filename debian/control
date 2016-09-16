@@ -7,9 +7,6 @@ Build-Depends: debhelper (>= 9),
                default-jdk-headless | default-jdk,
                gradle-debian-helper,
                javahelper,
-               libicu4j-java (>= 56.1),
-               libkxml2-java,
-               libxpp3-java,
                maven-repo-helper
 Standards-Version: 3.9.8
 Homepage: https://android.googlesource.com/platform/libcore
