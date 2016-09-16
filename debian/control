@@ -55,17 +55,6 @@ Description: Android rewrite of the evil licensed json.org - Documentations
  .
  [1] http://wiki.debian.org/qa.debian.org/jsonevil
 
-Package: libandroid-luni-java
-Architecture: all
-Depends: libandroid-dex-java (>= ${binary:Version}),
-         libicu4j-java (>= 56.1),
-         libkxml2-java,
-         libxpp3-java,
-         ${misc:Depends}
-Description: lang, utils, networking, I/O of the Android platform framework
- This library is part of Android's platform framework focusing on the Java
- language, miscellaneous utils, networking and input/output.
-
 Package: libdex-java
 Architecture: all
 Depends: libandroid-dex-java, ${misc:Depends}

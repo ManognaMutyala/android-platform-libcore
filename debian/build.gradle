@@ -19,18 +19,3 @@ subprojects {
     }
   }
 }
-
-project(':luni') {
-  dependencies {
-    compile 'com.ibm.icu:icu4j:debian'
-    compile 'kxml2:kxml2:debian'
-    compile 'xpp3:xpp3:debian'
-    compile project(':dex')
-  }
-
-  sourceSets.main.java {
-    srcDir '../dalvik/src/main/java'
-    srcDir '../libart/src/main/java'
-    srcDir '../xml/src/main/java'
-  }
-}
