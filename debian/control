@@ -54,9 +54,3 @@ Description: Android rewrite of the evil licensed json.org - Documentations
  This pacakge provides the API Javadoc.
  .
  [1] http://wiki.debian.org/qa.debian.org/jsonevil
-
-Package: libdex-java
-Architecture: all
-Depends: libandroid-dex-java, ${misc:Depends}
-Description: Dalvik Executable Java library - Transitional dummy package
- This package is transitional and can be safely removed.
