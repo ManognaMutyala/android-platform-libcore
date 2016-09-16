@@ -1,6 +1,14 @@
 android-platform-libcore (7.0.0+r1-1) UNRELEASED; urgency=medium
 
   * New upstream release
+  * get-orig-source: Make use of d/watch
+  * New package: libandroid-json-java-doc
+  * No longer provide libandroid-luni-java: No one is using luni.jar and it is
+    complicated to maintain
+  * Remove transitional package libdex-java
+  * d/generatePom.gradle: Sort the dependencies in the generated POMs for
+    reproducibility
+  * Build-Depends on default-jdk-headless | default-jdk
 
  -- Kai-Chung Yan <seamlikok@gmail.com>  Fri, 16 Sep 2016 17:03:51 +0800
 
