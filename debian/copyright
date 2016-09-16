@@ -37,12 +37,8 @@ License: public-domain
 Files: luni/src/main/java/java/nio/charset/CharsetDecoderICU.java
        luni/src/main/java/java/nio/charset/CharsetEncoderICU.java
        luni/src/main/java/java/nio/charset/CharsetICU.java
-       luni/src/main/java/libcore/icu/CollationElementIteratorICU.java
        luni/src/main/java/libcore/icu/CollationKeyICU.java
-       luni/src/main/java/libcore/icu/NativeCollation.java
        luni/src/main/java/libcore/icu/NativeConverter.java
-       luni/src/main/java/libcore/icu/RuleBasedCollatorICU.java
-       luni/src/main/native/libcore_icu_NativeCollation.cpp
        luni/src/main/native/libcore_icu_NativeConverter.cpp
 Copyright: 1995-2014, International Business Machines Corporation and others
 License: ICU
@@ -50,10 +46,6 @@ License: ICU
 Files: luni/src/main/native/canonicalize_path.cpp
 Copyright: 2003, Constantin S. Svintsoff <kostik@iclub.nsu.ru>
 License: BSD-3-clause
-
-Files: luni/src/main/java/java/lang/StrictMath.java
-Copyright: 2004, Sun Microsystems, Inc.
-License: Sun
 
 Files: luni/src/main/java/org/xml/*
        xml/src/main/java/org/xmlpull/*
@@ -128,10 +120,6 @@ License: MIT
 
 License: public-domain
  Public Domain: no warranty.
-
-License: Sun
- Permission to use, copy, modify, and distribute this software is
- freely granted, provided that this notice is preserved.
 
 License: openssl
  Redistribution and use in source and binary forms, with or without
