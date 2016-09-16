@@ -16,4 +16,4 @@ override_dh_auto_clean:
 	rm -r -f debian/.gradle
 
 get-orig-source:
-	wget --continue https://android.googlesource.com/platform/libcore/+archive/$(UPSTREAM_TAG).tar.gz
+	uscan --download-current-version --force-download
