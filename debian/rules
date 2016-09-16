@@ -9,7 +9,7 @@ ANDROID_VERSION = $(shell echo $(DEB_VERSION_UPSTREAM) | sed --expression="s/\+r
 	dh $@ --with maven_repo_helper --buildsystem=gradle
 
 override_dh_auto_build:
-	dh_auto_build -- -settings-file debian/settings.gradle --project-prop androidVersion=$(ANDROID_VERSION) assemble
+	dh_auto_build -- --settings-file debian/settings.gradle --project-prop androidVersion=$(ANDROID_VERSION) assemble
 
 override_dh_auto_clean:
 	dh_auto_clean
