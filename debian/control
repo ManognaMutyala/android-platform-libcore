@@ -43,7 +43,7 @@ Description: Android rewrite of the evil licensed json.org
 Package: libandroid-json-java-doc
 Architecture: all
 Section: doc
-Depends: ${misc:Depends}
+Depends: default-jdk-doc, ${misc:Depends}
 Description: Android rewrite of the evil licensed json.org - Documentations
  Json.org is a popular java library to parse and create JSON string from
  the author of the JSON standard Douglas Crockford. His implementation however
