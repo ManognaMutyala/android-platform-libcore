@@ -35,7 +35,7 @@ Description: Android rewrite of the evil licensed json.org
  the author of the JSON standard Douglas Crockford. His implementation however
  is not free software[1].
  .
- Therefor the Android team did a cleanroom reimplementation of a JSON library
+ Therefore the Android team did a cleanroom reimplementation of a JSON library
  to be used in place of the original one.
  .
  [1] http://wiki.debian.org/qa.debian.org/jsonevil
@@ -48,9 +48,9 @@ Description: Android rewrite of the evil licensed json.org - Documentations
  the author of the JSON standard Douglas Crockford. His implementation however
  is not free software[1].
  .
- Therefor the Android team did a cleanroom reimplementation of a JSON library
+ Therefore the Android team did a cleanroom reimplementation of a JSON library
  to be used in place of the original one.
  .
- This pacakge provides the API Javadoc.
+ This package provides the API Javadoc.
  .
  [1] http://wiki.debian.org/qa.debian.org/jsonevil
