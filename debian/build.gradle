@@ -6,6 +6,7 @@ subprojects {
   group = 'com.android'
   sourceCompatibility = 1.7
   targetCompatibility = 1.7
+  javadoc.options.links 'file:///usr/share/doc/default-jdk/api'
 
   task generatePom {
     outputs.files "${buildDir}/${project.name}.pom"

@@ -38,7 +38,20 @@ Description: Android rewrite of the evil licensed json.org
  Therefor the Android team did a cleanroom reimplementation of a JSON library
  to be used in place of the original one.
  .
- The Javadoc of this library is included in libandroid-*-java-doc.
+ [1] http://wiki.debian.org/qa.debian.org/jsonevil
+
+Package: libandroid-json-java-doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: Android rewrite of the evil licensed json.org - Documentations
+ Json.org is a popular java library to parse and create JSON string from
+ the author of the JSON standard Douglas Crockford. His implementation however
+ is not free software[1].
+ .
+ Therefor the Android team did a cleanroom reimplementation of a JSON library
+ to be used in place of the original one.
+ .
+ This pacakge provides the API Javadoc.
  .
  [1] http://wiki.debian.org/qa.debian.org/jsonevil
 
