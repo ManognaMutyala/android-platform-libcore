@@ -52,3 +52,13 @@ Description: Android rewrite of the evil licensed json.org - Documentations
  This package provides the API Javadoc.
  .
  [1] http://wiki.debian.org/qa.debian.org/jsonevil
+
+Package: android-platform-libcore-headers
+Architecture: all
+Section: libdevel
+Depends: ${misc:Depends}
+Description: Header files in AOSP repository platform/libcore
+ This package provides the header files included in the AOSP repository
+ platform/libcore.
+ .
+ These headers are used by android-platform-libnativehelper.
