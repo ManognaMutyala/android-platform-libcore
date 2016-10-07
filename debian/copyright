@@ -60,6 +60,10 @@ Files: xml/src/main/java/org/kxml2/*
 Copyright: 2002-2003, Stefan Haustein, Oberhausen, Rhld., Germany
 License: MIT
 
+Files: ojluni/*.java
+Copyright: 1997-2013, Oracle and/or its affiliates
+License: GPL-2
+
 License: Apache-2.0
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -185,3 +189,7 @@ License: ICU
  Except as contained in this notice, the name of a copyright holder shall not be
  used in advertising or otherwise to promote the sale, use or other dealings in
  this Software without prior written authorization of the copyright holder.
+
+License: GPL-2
+ The full text of GPL-2 can be found in `/usr/share/common-licenses/GPL-2` on
+ a Debian system.
