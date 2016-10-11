@@ -1,3 +1,11 @@
+android-platform-libcore (7.0.0+r1-3) experimental; urgency=medium
+
+  * debian/copyright: Mention GPL-2 licensed files in ojluni
+  * debian/copyright: Exclude *.dex
+  * Re-import 7.0.0+r1 to exclude *.dex
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Tue, 11 Oct 2016 14:12:51 +0200
+
 android-platform-libcore (7.0.0+r1-2) experimental; urgency=medium
 
   * Update to debhelper 10
