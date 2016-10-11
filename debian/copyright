@@ -1,6 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0
 Source: https://android.googlesource.com/platform/libcore
 Files-Excluded: *.jar *.zip *.dex
+
 Files: *
 Copyright: 2005-2014, The Android Open Source Project
            2007-2014, Google Inc.
