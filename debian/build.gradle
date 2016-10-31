@@ -6,31 +6,4 @@ subprojects {
   group = 'com.android'
   sourceCompatibility = 1.7
   targetCompatibility = 1.7
-  javadoc.options.links 'file:///usr/share/doc/default-jdk/api'
-
-  task generatePom {
-    outputs.files "${buildDir}/${project.name}.pom"
-    assemble.dependsOn generatePom
-    clean.doLast {
-      delete "${buildDir}/${project.name}.pom"
-    }
-    doFirst {
-      pom {
-        project {}
-        whenConfigured {
-          setDependencies(getDependencies().toSorted { a, b ->
-            if ((a.scope <=> b.scope) != 0) {
-              a.scope <=> b.scope
-            } else if ((a.groupId <=> b.groupId) != 0) {
-              a.groupId <=> b.groupId
-            } else if ((a.artifactId <=> b.artifactId) != 0) {
-              a.artifactId <=> b.artifactId
-            } else {
-              a.version <=> b.version
-            }
-          })
-        }
-      }.writeTo("${buildDir}/${project.name}.pom")
-    }
-  }
 }

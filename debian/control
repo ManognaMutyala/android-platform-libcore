@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 10),
                default-jdk-headless | default-jdk,
                gradle-debian-helper,
                javahelper,
-               maven-repo-helper
+               maven-repo-helper (>= 1.4~)
 Standards-Version: 3.9.8
 Homepage: https://android.googlesource.com/platform/libcore
 Vcs-Git: https://anonscm.debian.org/git/android-tools/android-platform-libcore.git
