@@ -1,4 +1,4 @@
-android-platform-libcore (7.0.0+r3-1) UNRELEASED; urgency=medium
+android-platform-libcore (7.0.0+r3-1) unstable; urgency=medium
 
   * Upload to unstable
   * New upstream release
@@ -7,7 +7,7 @@ android-platform-libcore (7.0.0+r3-1) UNRELEASED; urgency=medium
   * Let gradle-debian-helper generate Maven POMs
     * d/control: Build-Depends on gradle-debian-helper (>= 1.4~)
 
- -- Kai-Chung Yan <seamlikok@gmail.com>  Tue, 06 Dec 2016 16:46:22 +0800
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Tue, 06 Dec 2016 18:23:08 +0800
 
 android-platform-libcore (7.0.0+r1-3) experimental; urgency=medium
 
